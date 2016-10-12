@@ -40,8 +40,8 @@ DROP TABLE IF EXISTS `Parking Fines`;
 
 CREATE TABLE `Parking Fines` (
   `Fine Number` INTEGER NOT NULL AUTO_INCREMENT, 
-  `Date` DATETIME, 
-  `Time` DATETIME, 
+  `Date` VARCHAR(255), 
+  `Time` VARCHAR(255), 
   `Application / Permint Number` INTEGER DEFAULT 0, 
   `Vehicle Registration Number` VARCHAR(255), 
   `Vehicle Type` VARCHAR(255), 
@@ -56,7 +56,7 @@ SET autocommit=1;
 # Dumping data for table 'Parking Fines'
 #
 
-INSERT INTO `Parking Fines` (`Fine Number`, `Date`, `Time`, `Application / Permint Number`, `Vehicle Registration Number`, `Vehicle Type`, `Details of Offence`, `Location of Offence`) VALUES (1, '2016-09-01 00:00:00', '1899-12-30 11:00:00', 2, 'AMJ 708', 'Small Car', 'Permit Expired', 'Parking bay 89');
+INSERT INTO `Parking Fines` (`Fine Number`, `Date`, `Time`, `Application / Permint Number`, `Vehicle Registration Number`, `Vehicle Type`, `Details of Offence`, `Location of Offence`) VALUES (1, '01/09/16', '11:00:00 AM', 2, 'AMJ 708', 'Small Car', 'Permit Expired', 'Parking bay 89');
 # 1 records
 
 #
